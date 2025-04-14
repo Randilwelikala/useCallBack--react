@@ -14,15 +14,18 @@ const names =[
 function App() {
 
   const[count,setCount] = useState(0);
+
+  const getNames = ()=>{
+    return names[count];
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h3>count = {count}</h3>
-         
-          
+          <h3>count = {count}</h3>         
         </p>
+        {getNames().name}
         
       </header>
     </div>
