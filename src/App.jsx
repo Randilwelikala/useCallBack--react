@@ -19,6 +19,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          <h3>count = {count}</h3>
          
           
         </p>
