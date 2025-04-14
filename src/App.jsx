@@ -25,7 +25,7 @@ function App() {
         <p>
           <h3>count = {count}</h3>         
         </p>
-        {getNames().name}
+        {/* {getNames().name} */}
         
       </header>
     </div>
