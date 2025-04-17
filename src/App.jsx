@@ -8,6 +8,10 @@ const names =[
   {id:2 , name:"Alice"},
   {id:3 , name:"Bob"},
   {id:4 , name:"Eve"},
+  {id:5 , name:"Same"},
+  {id:6 , name:"James"},
+  {id:7 , name:"Alex"},
+
 
 ];
 
