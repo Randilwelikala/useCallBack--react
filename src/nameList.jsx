@@ -1,8 +1,14 @@
-const nameList  = ()=>{
+import { useState } from "react";
+
+const NameList  = ({getNames})=>{
+    const [names,setNames] = useState([]);
+
+    
+
     return(
         <div>
             <p>
-                Name LIst
+                
             </p>
             
 
@@ -10,4 +16,4 @@ const nameList  = ()=>{
     )
 }
 
-export default nameList;
+export default NameList;

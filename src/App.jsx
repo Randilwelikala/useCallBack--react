@@ -27,9 +27,12 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h3>count = {count}</h3>         
+          <h3>count = {count}</h3>    
+               
         </p>
+        <button onClick ={()=>setCount(count)}>+</button>
         {/* {getNames().name} */}
+        <nameList getNames = {getNames}/>
         
       </header>
     </div>
