@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
+import NameList from './NameList';
+
 
 const names =[
   {id:0 , name:"John"},
@@ -32,7 +34,7 @@ function App() {
         </p>
         <button onClick ={()=>setCount(count+1)}>+</button>
         {/* {getNames().name} */}
-        <nameList getNames = {getNames}/>
+        <NameList getNames = {getNames}/>
         
       </header>
     </div>

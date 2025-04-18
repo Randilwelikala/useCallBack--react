@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NameList  = ({getNames})=>{
+
     const [names,setNames] = useState([]);
 
+    useEffect(()=>{
+        setNames([...names,getNames()]);
+    },[]);
+    
     
 
     return(
         <div>
-            <p>
-                
-            </p>
-            
-
+            {names.map((item)=>{
+                return <p>{item.name}</p>
+            })}
         </div>
     )
 }
