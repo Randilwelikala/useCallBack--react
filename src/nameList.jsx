@@ -6,7 +6,7 @@ const NameList  = ({getNames})=>{
 
     useEffect(()=>{
         setNames([...names,getNames()]);
-    },[]);
+    },[getNames]);
     
     
 
