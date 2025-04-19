@@ -32,7 +32,8 @@ function App() {
           <h3>count = {count}</h3>    
                
         </p>
-        <button onClick ={()=>setCount(count+1)}>+</button>
+        <button onClick ={()=>setCount(count+1)}><h2>_+_</h2></button>
+        <button onClick ={()=>setCount(count-1)}><h2>_-_</h2></button>
         {/* {getNames().name} */}
         <NameList getNames = {getNames}/>
         
