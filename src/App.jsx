@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           <h3>count = {count}</h3>
           
@@ -36,10 +36,12 @@ function App() {
         </p>
         <button onClick ={()=>setCount(count+1)}><h2>_+_</h2></button>
         <br/>
+        <NameList getNames={getNames}/>
+        <br/>
         <h3>Reverse count = {reverseCount}</h3>
-        <button onClick ={()=>setCount(count-1)}><h2>_-_</h2></button>
+        <button onClick ={()=>setReverseCount(reverseCount-1)}><h2>_-_</h2></button>
         {/* {getNames().name} */}
-        <NameList getNames = {getNames}/>
+        
         
       </header>
     </div>
