@@ -20,6 +20,7 @@ const names =[
 function App() {
 
   const[count,setCount] = useState(0);
+  const [reverseCount,setReverseCount] = useState(100); 
 
   const getNames = ()=>{
     return names[count];
@@ -29,10 +30,13 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h3>count = {count}</h3>    
+          <h3>count = {count}</h3>
+          
                
         </p>
         <button onClick ={()=>setCount(count+1)}><h2>_+_</h2></button>
+        <br/>
+        <h3>Reverse count = {reverseCount}</h3>
         <button onClick ={()=>setCount(count-1)}><h2>_-_</h2></button>
         {/* {getNames().name} */}
         <NameList getNames = {getNames}/>
